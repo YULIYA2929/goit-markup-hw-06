@@ -819,16 +819,16 @@ margin-bottom: 8px;
 
 
 
-/* MOB Meny */
+/* MOB Menu */
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 32px;
+  min-width: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  margin: 0;
+ 
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -852,38 +852,74 @@ margin-bottom: 8px;
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding: 40px;
+  padding-top: 80px;
+  background-color: var(--white-cl);
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
 
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
 .menu-container.is-open {
   transform: translateX(0);
 }
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+  top: 24px;
+  right: 24px;
+  
 }
 
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: auto;
 }
 
-.mobile-menu .link {
+.mobile-menu-link {
   display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
+  color: var(--navy-blue-cl);
+font-size: 36px;
+font-weight: 700;
+line-height: 1/14;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+color: var(---ocean-cl);
+}
+
+
+.mobile-menu-socials {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.mobile-menu-socials .media-web-content {
+  border-radius: 56px;
+}
+
+.media-web-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
 }
 
 
@@ -895,7 +931,7 @@ margin-bottom: 8px;
 
 
 @media screen and (max-width: 767px) {
-  .menu-studio-web {
+  .header-logo-text {
     display: none;
   }
   .contact-adress-menu {
@@ -940,7 +976,13 @@ margin-bottom: 8px;
     
     }
     
-
+    @media screen and (max-width: 767.98px) {
+      
+      .header {
+         padding: 20px 16px;
+      } 
+  
+  }
 
     .header-logo-studio {
       color: var(--cloud-cl) ;
@@ -965,3 +1007,16 @@ margin-bottom: 8px;
   
   }
   
+  @media screen and (min-width: 1158px) {
+    .header-logo-text {
+      font-size: 21px;
+      margin-right: 365px;
+    }
+    
+  } 
+
+  .header-logo-content {
+    color: var(--navy-blue-cl);
+    
+ 
+ }
