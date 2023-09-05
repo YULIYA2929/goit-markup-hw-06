@@ -11,33 +11,49 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"/>
 
 <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/styles-old.css">
 
 
 
 </head>
 <body>
-    <header class="header list">
-        <div class="container style">
-         <nav class=" container-nav-list list">
-           <a class="header-studio-content link" href="./index.html">Web<span class="header-logo-content">Studio</span></a>
-     
-    <ul class="menu-studio-web list">
-           <li><a class="studio-web link" href="./index.html">Studio</a></li>
-           <li><a class="studio-web-list link" href="./portfolio.html">Portfolio</a></li>
-           <li><a class="studio-web link" href="" >Contacts</a></li>
-       </ul>
-       
-   </nav>
-
-       <address class="contact-adress-list link">
-       <ul class="menu-studio-web list">
-           <li class=""><a class="contact-adress-malto link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-           <li class=""><a class="contact-adress-malto link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-       </ul>
-    </address>
-</div>
-</header>
-<main>
+    <main>
+    
+<section class="header">
+    <div class="container">
+      <nav class="header-nav">
+      <a class="header-logo" href=""><span class="logo-web">WEB</span>STUDIO</a>
+      <ul class="header-nav-list">
+        <li><a class="studio-web link" href="./index.html">Studio</a></li>
+        <li><a class="studio-web-list link" href="./portfolio.html">Portfolio</a></li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    
+  <button type="button"
+  class="menu-toggle js-open-menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu">
+  <svg class="menu-open-icon"
+    width="32"
+    height="22">
+    <use href="./images/icons.svg#icon-charm_menu-hamburger-1"></use>
+  </svg>
+</button>
+    <div class="header-contakt">
+      <ul class="header-contakt-list">
+        <li class="header-contakt-item">
+          <a class="header-contakt-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="header-contakt-item">
+          <a class="header-contakt-link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </section>
 
 <section class="portfolio-section-link">
     <div class="container">
@@ -166,7 +182,7 @@
 </section>
 
 </main>
-<footer class="hero">
+<!-- <footer class="hero">
     <div class="container-div">
 
         <div class="container-logo-portfolio">
@@ -235,6 +251,68 @@
     </form>
     </div>
  </div>
-</footer>
+</footer> -->
+<section class="footer section">
+    <div class="container footer-container">
+     <div class="footer-tablet">
+       <div class="footer-nav">
+         <a class="footer-logo"><span class="logo-web">WEB</span>STUDIO</a>
+         <p class="footer-text-discrip">
+           Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+         </p>
+       </div>
+       <div class="footer-join">
+         <h3 class="footer-join-title">Social media</h3>
+         <ul class="join-icon-list">
+           <li class="join-icon-item">
+             <a class="join-icon-link" href="https://instagram.com/" target="_blank"
+             rel="noopener noopener" aria-label="icon-instagram">
+               <svg class="join-icon" width="24" height="24">
+                   <use href="./images/icons.svg#icon-instagram-2" ></use>
+               </svg>
+             </a>
+           </li>
+           <li class="join-icon-item">
+             <a class="join-icon-link" href="https://twitter.com/" target="_blank"
+             rel="noopener noopener" aria-label="icon-twitter">
+               <svg class="join-icon" width="24" height="24">
+                   <use href="./images/icons.svg#icon-twitter-1"></use>
+             </svg>
+           </a>
+           </li>
+           <li class="join-icon-item">
+             <a class="join-icon-link" href="https://facebook.com/" target="_blank"
+             rel="noopener noopener" aria-label="icon-facebook">
+               <svg class="join-icon" width="24" height="24">
+                   <use href="./images/icons.svg#icon-facebook-1"></use>
+             </svg>
+           </a>        
+           </li>
+           <li class="join-icon-item">
+             <a class="join-icon-link" href="https://www.linkedin.com/" target="_blank"
+             rel="noopener noopener" aria-label="icon-linkedin">
+               <svg class="join-icon" width="24" height="24">
+                   <use href="./images/icons.svg#icon-linkedin-1"></use>
+             </svg>
+           </a>
+           </li>
+         </ul>
+       </div>
+     </div>
+     <form class="mailing-list">
+       <p class="mailing-text">Subscribe</p>
+       <div class="mailing-wrap">
+         <label class="mailing-label" for="email">
+           <input type="email" name="email" id="email" placeholder="E-mail">
+         </label>
+       <button  class="mailing-btn" type="submit">Subscribe
+         <svg class="icon-send" width="24" height="24">
+           <use href="./images/icons.svg#icon-Frame-3"></use>
+         </svg>
+       </button>
+       </div>
+     </form>
+    </div>
+   </section>
 </body>
 </html>
